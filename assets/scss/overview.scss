@@ -1,0 +1,303 @@
+$screen-sm-min: 768px;
+$screen-xs-max: (
+  $screen-sm-min - 1
+);
+$screen-md-min: 992px;
+$screen-sm-max: (
+  $screen-md-min - 1
+);
+$screen-lg-min: 1200px;
+$screen-md-max: (
+  $screen-lg-min - 1
+);
+
+$mainNavBarColor: #ffffff;
+
+$mainNavBarHeight: 64px;
+$heroBarHeight: 210px;
+
+$baseMargin: 8px;
+
+$stsGray: #333333;
+$stsOrange: #ff3300;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+.abs-bar-button {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  right: 180px;
+}
+
+.main-sts-container {
+  padding: 0;
+  margin-left: 86px;
+  margin-right: 86px;
+}
+
+@media (max-width: $screen-xs-max) {
+  .main-sts-container {
+    padding: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+
+//Question css
+@media(max-width: 1000px) {
+  .answers .input-area {
+    width: 85%
+  }
+}
+
+.sign-class {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(50% 150%, #EA552F 50%, #E11722 100%);
+}
+
+.add-media-image-answer {
+  height: 63px;
+  padding: 0;
+  line-height: 63px;
+}
+
+.black-bar .panel {
+  margin-bottom: 10px;
+}
+
+.multi-select-btn button:hover,
+.multi-select-btn button:focus {
+  outline: none;
+}
+
+.question .panel {
+  height: 120px;
+}
+
+.white-box {
+  background: #FFFFFF;
+}
+
+.input-area {
+  color: #333333;
+}
+
+.question .input-area {
+  padding: 10px;
+  margin-left: 55px;
+  width: calc(100% - 55px);
+  height: 119px;
+}
+
+.answers .input-area {
+  height: 64px;
+  margin: -16px -10px -10px -10px;
+  width: 95%;
+  margin-left: 40px;
+
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+@media(max-width: 768px) {
+  .answers .input-area {
+    width: 82%
+  }
+
+  .image-answer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+
+.type-select {
+  border: 1px solid #424242;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.type-select .caret {
+  float: right;
+  margin: 10px;
+}
+
+.answers .dropdown-menu {
+  border-radius: 0;
+}
+
+.answer-letter {
+  font-size: 22px;
+}
+
+.ui-select-container,
+.ui-select-match {
+  outline: none !important;
+}
+
+.ui-select-container {
+  margin-top: 9px;
+}
+
+.ui-select-container .form-control {
+  margin: 0;
+  height: 43px;
+  outline: none;
+}
+
+.ui-select-toggle {
+  padding-left: 10px;
+  border-radius: 3px !important;
+}
+
+.ui-select-search {
+  border-radius: 3px !important;
+}
+
+
+.correct-answer-label:hover,
+.correct-answer-label:focus,
+.correct-answer,
+.correct-answer-label-q:hover,
+.correct-answer-label-q:focus {
+  background-color: green;
+}
+
+.sts-rel-container {
+  position: relative;
+}
+
+.sts-abs-container {
+  position: relative;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.sts-ad-container {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  top: 0;
+  padding: 0 16px 16px 0;
+}
+
+.sts-black-bar-height {
+  min-height: 210px;
+}
+
+.sts-topbar-container {
+  padding-left: 210px;
+  padding-right: 210px;
+}
+
+
+.navbar-brand {
+  margin-left: 0;
+}
+
+@media (max-width : 1400px) and (min-width: 1025px) {
+  .sts-abs-container {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .sts-topbar-make-container,
+  .sts-topbar-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .abs-bar-button {
+    left: 0;
+  }
+}
+
+@media (max-width : 1024px) {
+  .sts-abs-container {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sts-ad-container {
+    display: none;
+  }
+
+  .sts-topbar-make-container,
+  .sts-topbar-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .abs-bar-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .quiz-card h4,
+  .group-card h4 {
+    font-size: 18px;
+  }
+
+  .quiz-description-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .sts-abs-container {
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sts-topbar-container,
+  .sts-topbar-make-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .sts-ad-container {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-left: 16px;
+  }
+
+  .abs-bar-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

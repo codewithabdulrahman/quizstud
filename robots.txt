@@ -1,0 +1,11 @@
+# Allow all URLs (see https://www.robotstxt.org/robotstxt.html)
+User-agent: *
+Allow: /
+Disallow: /login/
+Disallow: /assets/
+Disallow: /verifyEmail/
+Disallow: /registration/
+Disallow: /recover/
+Disallow: /overview/
+Disallow: /profile/
+Sitemap: https://make.quizstud.com/sitemap.xml
